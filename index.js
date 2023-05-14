@@ -57,14 +57,14 @@ let readData = async () => {
             btn3.addEventListener("click", remove)
         })
 
-        function remove(){
-            const Ref = doc(db, 'Todo', 'Todo');
+        // function remove(){
+        //     const Ref = doc(db, 'Todo', 'Todo');
 
-            // Remove the 'capital' field from the document
-            updateDoc(Ref, {
-                Todo: deleteField()
-            });
-        }
+        //     // Remove the 'capital' field from the document
+        //     updateDoc(Ref, {
+        //         Todo: deleteField()
+        //     });
+        // }
     } catch (error) {
         console.log(error);
     }
@@ -89,13 +89,13 @@ let readData2 = async () => {
             btn3.addEventListener("click", remove)
         })
 
-        function remove(){
-            querySnapshot.forEach((doc) => {;
-                updateDoc(doc, {
-                    Todo: deleteField()
-                });
-            });
-        }
+        // function remove(){
+        //     querySnapshot.forEach((doc) => {;
+        //         updateDoc(doc, {
+        //             Todo: deleteField()
+        //         });
+        //     });
+        // }
     } catch (error) {
         console.log(error);
     }
